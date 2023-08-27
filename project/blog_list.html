@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+    
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,10 @@
     <title>博客列表页</title>
 
     <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/blog_list.css">
 </head>
+
+
 <body>
     <!-- navigation 导航栏 -->
     <div class="nav">
@@ -27,13 +31,71 @@
     <!-- 页面的主体部分 -->
     <div class="container">
         <!-- 左侧信息 -->
-        <div class="comtainer-laft">
-            
+        <div class="comtainer-left">
+            <!-- 用户信息区 -->
+            <div class="card">
+                <!-- 用户头像 -->
+                <img src="image/ID.jpg" alt="">
+                <!-- 用户名 -->
+                <h3>反骨猫</h3>
+                <!-- github地址 -->
+                <a href="www.github.com">github地址</a>
+                <!-- 统计信息 -->
+                <div class="counter">
+                    <span>文章</span>
+                    <span>分类</span>
+                </div>
+                <div class="counter">
+                    <span>2</span>
+                    <span>1</span>
+                </div>
+            </div>
         </div>
         <!-- 右侧信息 -->
         <div class="container-right">
+            <!-- 这个div表示第一篇博客 -->
+            <div class="blog">
+                <!-- 博客标题 -->
+                <div class="title">我的第一篇博客</div>
+                <!-- 发布时间 -->
+                <div class="data">2023-08-27 16:15</div>
+                <!-- 摘要 -->
+                <div class="desc">从今天起我要卷起来，Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem asperiores dignissimos quas ad saepe praesentium rem magnam placeat vel deleniti neque molestias reiciendis corrupti esse vero ducimus architecto, facere vitae.</div>
+                 <!-- html当中不能直接使用大于号(转义字符&gt;是大于号，&lt;是小于号)，大于号可能会被当作是标签的一部分 -->
+                  <a href="blog_datail.html?blogId=1">查看全文&gt;&gt;</a>
+            </div>
+
+
+            <!-- 这个div表示第二篇博客 -->
+            <div class="blog">
+                <!-- 博客标题 -->
+                <div class="title">我的第一篇博客</div>
+                <!-- 发布时间 -->
+                <div class="data">2023-08-27 16:15</div>
+                <!-- 摘要 -->
+                <div class="desc">从今天起我要卷起来，Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem asperiores dignissimos quas ad saepe praesentium rem magnam placeat vel deleniti neque molestias reiciendis corrupti esse vero ducimus architecto, facere vitae.</div>
+                <!-- html当中不能直接使用大于号(转义字符&gt;是大于号，&lt;是小于号)，大于号可能会被当作是标签的一部分 -->
+                <a href="blog_datail.html?blogId=1">查看全文&gt;&gt;</a>
+            </div>
+
+
+            <!-- 这个div表示第三篇博客 -->
+            <div class="blog">
+                <!-- 博客标题 -->
+                <div class="title">我的第一篇博客</div>
+                <!-- 发布时间 -->
+                <div class="data">2023-08-27 16:15</div>
+                <!-- 摘要 -->
+                    <div class="desc">从今天起我要卷起来，Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem asperiores dignissimos quas ad saepe praesentium rem magnam placeat vel deleniti neque molestias reiciendis corrupti esse vero ducimus architecto, facere vitae.</div>
+                    <!-- html当中不能直接使用大于号(转义字符&gt;是大于号，&lt;是小于号)，大于号可能会被当作是标签的一部分 -->
+                    <a href="blog_datail.html?blogId=1">查看全文&gt;&gt;</a>
+            </div>
+
 
         </div>
+
+
+
     </div>
 
 
