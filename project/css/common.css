@@ -111,6 +111,7 @@ body {
 
     /* background-color: red; */
 }
+
 .container-right {
 
     height: 100%;
@@ -119,6 +120,9 @@ body {
     background-color: rgba(255,255,255,0.6);/*半透明白色背景*/
     border-radius: 10px;/*圆角矩形*/
     padding: 25px;/*加上内边距，让文字不顶边框排列*/
+
+    /* 当内容超出范围时，自动添加滚动条 */
+    overflow: auto;
 }
 
 /* 设置用户信息区 */
