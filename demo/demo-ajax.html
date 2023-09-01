@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ajax的使用</title>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.4/jquery.js"></script>
+</head>
+<body>
+    <script>
+        $.ajax({
+            url: "https://www.baidu.com",
+            type: "get",// 可以写做 post，put，delete 等等，写作大写的也可以
+            // type: "post",
+            // data: "这是body",
+            // contantType: "text/plan",
+            success: function(body){
+                    //写处理响应的代码
+                    console.log(body);
+            }
+        });
+    </script>
+</body>
+</html>

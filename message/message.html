@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表白墙</title>
+
+    <style>
+        /* * 通配符选择器, 是选中页面所有元素 */
+        * {
+            /* 消除浏览器的默认样式. */
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 600px;
+            margin: 20px auto;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+            color: #666;
+            margin: 20px 0;
+        }
+
+        .row {
+            /* 开启弹性布局 */
+            display: flex;
+            height: 40px;
+            /* 水平方向居中 */
+            justify-content: center;
+            /* 垂直方向居中 */
+            align-items: center;
+        }
+
+        .row span {
+            width: 80px;
+        }
+
+        .row input {
+            width: 200px;
+            height: 30px;
+        }
+
+        .row button {
+            width: 280px;
+            height: 30px;
+            color: white;
+            background-color: orange;
+            /* 去掉边框 */
+            border: none;
+            border-radius: 5px;
+        }
+
+        /* 点击的时候有个反馈 */
+        .row button:active {
+            background-color: grey;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <div class="container">
+        <h1>表白墙</h1>
+        <p>输入内容后点击提交, 信息会显示到下方表格中</p>
+        <div class="row">
+            <span>谁: </span>
+            <input type="text">
+        </div>
+        <div class="row">
+            <span>对谁: </span>
+            <input type="text">
+        </div>
+        <div class="row">
+            <span>说: </span>
+            <input type="text">
+        </div>
+        <div class="row">
+            <button id="submit">提交</button>
+        </div>
+        <div class="row">
+            <button id="revert">撤销</button>
+        </div>
+        <!-- <div class="row">
+            xxx 对 xx 说 xxxx
+        </div> -->
+    </div>
+
+
+</body>
+
+
+</html>
